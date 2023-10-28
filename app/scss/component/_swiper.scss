@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+/* Swiper
+-------------------------------------------------------------- */
+/* animation slider */
+
+.swiper-container {
+    &:hover {
+        cursor: ew-resize
+    }
+}
+
+.timing-function {
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}

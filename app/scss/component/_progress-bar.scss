@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+/* progess
+-------------------------------------------------------------- */
+.progress-bar {
+    background-color: transparent;
+    color: #798DA3;
+}
+
+.progress-title-holder {
+    padding-bottom: 0;
+    position: relative;
+    text-align: left;
+    margin-bottom: 12px;
+    span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    &.percent{
+        font-size: 15px;
+        color: #fff;
+    }
+    }
+}
+
+.progress-title {
+    z-index: 100;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.progress-number-wrapper {
+    width: 100%;
+    z-index: 10;
+}
+
+.progress-content-outter {
+    height: 4px;
+    background-color: #E6E6E6;
+}
+
+.progress-content {
+    height: 4px;
+    background-color: #3A3B3E;
+    width: 0%;
+    /* Initial value */
+}
+
+.white {
+    color: white;
+}
+
+.progress_number {
+    @include flex(center,flex-start);
+} 

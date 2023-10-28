@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+/* Reponsive
+-------------------------------------------------------------- */
+.icon_dashboard,
+.menu-mobile {
+    display: none;
+}
+
+.show-destop {
+    display: block;
+}
+
+@include res1760 {}
+
+@include res1600 {}
+
+@include res1440 {}
+
+@include res1200 {}
+
+@include res991 {
+    .mobile-button {
+        display: block;
+    }
+}
+
+@include res767 {}
+
+@include res600 {}
+
+@include res500 {}
