@@ -3,30 +3,26 @@
 /* Box
 -------------------------------------------------------------- */
 .topbar {
-  position: relative;
-  height: 55px;
-  @include flex(center, flex-start);
-
-  .ticker-title {
-    width: 7000px;
-  }
-
-  .ticker-title > * {
-    display: inline-block;
-    margin-right: 70px;
-    animation: title 10s infinite linear;
-  }
-
-  @keyframes title {
-    0% {
-      transform: translateX(0);
+    position: relative;
+    height: 55px;
+    @include flex(center, flex-start);
+  
+    .ticker-title {
+      width: 7000px;
     }
-    100% {
-      transform: translateX(-1000px);
+  
+    .ticker-title > * {
+      display: inline-block;
+      margin-right: 70px;
+      animation: title 10s infinite linear;
+    }
+  
+    @keyframes title {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-1000px);
+      }
     }
   }
-  &.style-2 {
-    background: url('../../../assets/images/counter/bg-counter.jpg') center center repeat;
-    background-size: cover;
-  }
-}

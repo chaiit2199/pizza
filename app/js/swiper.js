@@ -56,9 +56,12 @@ var swiper = new Swiper(".tf-menu-slider", {
             slidesPerView: 2,
         },
         991: {
-            slidesPerView: 3
+            slidesPerView: 2
         },
         1280: {
+            slidesPerView: 3
+        },
+        1500: {
             slidesPerView: 4
         },
     },
@@ -166,3 +169,25 @@ var swiper = new Swiper(".tf-partner-slider", {
     },
 });
 
+
+var slider = new Swiper ('.tf-testimonial-slider-gallery', {
+    slidesPerView: 1,
+    // centeredSlides: true,
+    loop: true,
+    loopedSlides: 5, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+var thumbs = new Swiper ('.testimonial-thumbs', {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    // centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+});
+
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;

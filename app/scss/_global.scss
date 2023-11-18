@@ -383,6 +383,13 @@ input[type="color"]::placeholder {
   color: $color-3;
 }
 
+select {
+  background: #fff;
+  color: $color-3;
+  border: 1px solid $color-3;
+  padding: 15px ;
+}
+
 /* Scroll Top
 -------------------------------------------------------------- */
 #scroll-top {

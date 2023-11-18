@@ -1,0 +1,81 @@
+@use "../abstracts/" as *;
+
+// About 
+.about {
+    .tf-instagram {
+        padding-top: 193px;
+        padding-bottom: 74px;
+    }
+}
+
+.team {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title.jpg) center center no-repeat;
+    }
+}
+
+.porfolio {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-4.jpg) center center no-repeat;
+    }
+    .tf-about-order {
+        &.style-2 {
+            padding-top: 128px;
+            padding-bottom: 127px;
+            .content {
+                padding-right: 0;
+                .heading {
+                    color: #fff;
+                    margin-bottom: 15px;
+                    .cl1 {
+                        color: $color-main;
+                    }
+                    .cl2 {
+                        color: $color-2;
+                    }
+                }
+                
+            }
+            .image {
+                position: absolute;
+                right: 0px;
+                bottom: -5px;
+            }
+        }
+    }
+}
+
+.offers {
+    .tf-banner {
+        padding: 125px 0 136px;
+        background: url('../../../assets/images/banner/bg-banner.jpg') center center no-repeat;
+        background-size: cover;
+        .tf-heading {
+            margin-bottom: 66px;
+            .heading {
+                color: $color-2;
+            }
+            .text-heading {
+                color: #fff;
+            }
+        }
+    }
+   
+    
+}
+
+.location {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-2.jpg) center center no-repeat;
+    }
+}
+
+.history {
+    .tf-accordion {
+        padding: 130px 0;
+        .flat-accordion {
+            padding: 120px 0;
+        }
+    }
+    
+}

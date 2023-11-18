@@ -1,5 +1,52 @@
 @use "../abstracts/" as *;
 
+// Top bar
+.topbar.style-2 {
+  background: $color-3;
+  height: auto;
+}
+.wrap-topbar {
+  @include flex(center,space-between);
+  padding: 24px 10px;
+  .content-left {
+    .information {
+      @include flex(center,flex-start);
+      li {
+        color: $color-2;
+        font-size: 15px;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-right: 20px;
+        i {
+          color: $color-main;
+          margin-right: 10px;
+        }
+        .text {
+          color: #fff;
+          margin-left: 7px;
+          letter-spacing: 2px
+        }
+      }
+    }
+  }
+  .content-right {
+    .menu-topbar {
+      @include flex(center,flex-end);
+      li {
+        margin-right: 20px;
+        a {
+          color: $color-2;
+          text-transform: uppercase;
+          i {
+            color: $color-main;
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Header
 -------------------------------------------------------------- */
 .header.main {
@@ -389,6 +436,81 @@
     &::before {
       opacity: 1;
     }
+  }
+}
+
+// style 2
+.header.style-2 {
+  height: 90px;
+  #site-header-inner {
+    height: 90px;
+  }
+  .header-left {
+    flex-grow: 0;
+    border: none;
+    .toogle-sidebar {
+      width: 90px;
+      height: 100%;
+      background-color: $color-main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tf-button-order {
+      padding: 0 32px;
+      height: 100%;
+      color: $color-3;
+      background: $color-2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid $color-3;
+      border-right: 1px solid $color-3;
+    }
+  }
+  .header-center {
+    flex-grow: 1;
+    .header__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 100%;
+      padding: 16px 35px 40px;
+      border-radius: 0 0 1000px 1000px;
+      background-color: $color-main;
+      z-index: 10;
+    }
+  }
+  .header-right {
+    .wrap-cart {
+      padding-right: 0;
+    }
+    .btn-cart {
+      padding: 30px 22px 30px 38px;
+      height: 100%;
+      display: inline-block;
+      background-color: #c8dda9;
+      text-align: center;
+      border-left: 1px solid $color-3;
+      border-right: 1px solid $color-3;
+      .text-cart {
+        padding-left: 0;
+      }
+      img {
+        margin-right: 8px;
+      }
+    }
+    .btn-search {
+      padding: 0 26px;
+    }
+  }
+  #main-nav .menu {
+    li {
+      a {
+        padding: 37px 0;
+      }
+    }
+    
   }
 }
 
