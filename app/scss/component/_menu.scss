@@ -54,7 +54,6 @@
         display: block;
         padding: 12px 20px;
         position: relative;
-        font-family: $font-main-1;
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
@@ -65,7 +64,7 @@
         padding-left: 40px;
 
         &.current-item {
-            color: #C8F27C;
+            color: $color-main;
         }
     }
 
@@ -76,7 +75,7 @@
     ul ul li.current-item a,
     ul>li.current-menu-item>a,
     ul>li>a:hover {
-        color: $color-hover;
+        color: $color-main;
     }
 
     .menu-item-has-children .arrow {
@@ -97,30 +96,33 @@
         content: "\f107";
     }
 
+    .menu-item-has-children .arrow.active,
     .menu-item-has-children.current-menu-item .arrow:before {
-        color: $color-hover;
+        color: $color-main;
     }
+
+    
 } 
 
 /* Mobile Menu Button */      
-.icon-menu { 
+.mobile-button { 
     @include transition3;
     position: absolute;
     width: 26px;
     height: 26px;
     top: 50%;
-    right: 0;
+    right: 15px;
     background-color: transparent;
     cursor: pointer;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-
+    display: none;
     &:before,
     &:after,
     span {
-        background-color: #fff;
+        background-color: $color-3;
         -webkit-transition: all ease 0.3s;
         -moz-transition: all ease 0.3s;
         transition: all ease 0.3s;
@@ -208,16 +210,16 @@
     -ms-transform: translateY(15px);
     -o-transform: translateY(15px);
     transform: translateY(15px);
-    background: #202020;
+    background: #fff;
     box-shadow: 0px 10px 25px 0px #2B344A1F;
 
     li {
         margin-right: 0 !important;
 
         a {
-            padding: 10px 20px;
+            padding: 10px 20px !important;
             opacity: 1;
-            color: $txt-color !important;
+            color: $color-3 !important;
         }
 
         &:hover .sub-menu {
@@ -242,15 +244,15 @@
 
         a:hover,
         a.current-item {
-            color: $white !important;
+            color: $color-main !important;
             opacity: 1;
             text-decoration-line: underline;
             text-underline-offset: 6px;
-            text-decoration-color: $color-hover;
+            text-decoration-color: $color-main;
         }
     }
 } 
 #main-nav .sub-menu li a:hover,
 #main-nav .sub-menu li a.current-item {
-    text-decoration-color: #5EDDA0;
+    text-decoration-color: $color-main;
 }

@@ -38,7 +38,13 @@
                                     <ul class="menu-topbar">
                                         <li><a href="#"><i class="fas fa-pizza-slice"></i>career</a></li>
                                         <li><a href="#"><i class="far fa-credit-card"></i>LOYALTY CARD</a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i>English</a></li>
+                                        <li><a href="#" class="english">
+                                            <i class="fas fa-globe"></i>
+                                            <select>
+                                                <option value="English">English</option>
+                                                <option value="Vietnamese">Vietnamese</option>
+                                            </select>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -73,7 +79,10 @@
                                 
                                 
                                 <div class="tf-button-order">
-                                    <a href="#" class="button-order">Your Order Address  <i class="fas fa-chevron-down"></i></a>
+                                    <select>
+                                        <option value="1">Your Order Address</option>
+                                        <option value="2">Your Order Address 2</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="header-center">
@@ -85,51 +94,74 @@
                                 <div class="header__logo-mobile">
                                     <a href="index.html"><img src="assets/images/logo/logo2.png" alt="" /></a>
                                 </div>
-                                <nav id="main-nav" class="main-nav">
-                                    <ul id="menu-primary-menu" class="menu">
-                                        <li class="menu-item menu-item-has-children current-menu-item">
-                                            <a href="Home-Corperate.html">
-                                                <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="About-01.html">
-                                                <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Service-01.html">
-                                                <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a class="menu-item" href="Service-01.html">Service 01</a>
-                                                    <a class="menu-item" href="Service-02.html">Service 02</a>
-                                                    <a class="menu-item" href="Service-Details.html">Service Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Project-List.html">
-                                                <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
-                                            </a>
-                                            
-                                        </li>
-
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Blog.html">
-                                                <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Contact.html">
-                                                <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <div class="menu-append">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="index.html">
+                                                    <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="index.html">Home 01</a>
+                                                        <a class="menu-item" href="home-02.html">Home 02</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children current-menu-item relative">
+                                                <a href="#">
+                                                    <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="about-us.html">About us</a>
+                                                        <a class="menu-item" href="carrer.html">Career</a>
+                                                        <a class="menu-item" href="faqs.html">Faqs</a>
+                                                        <a class="menu-item current-menu-item" href="history.html">History</a>
+                                                        <a class="menu-item" href="location.html">Location</a>
+                                                        <a class="menu-item" href="porfolio.html">Porfolio</a>
+                                                        <a class="menu-item" href="team.html">Team</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="menu-restaurant.html">
+                                                    <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="menu-restaurant.html">Menu Restaurant</a>
+                                                        <a class="menu-item" href="book-a-table.html">Book a table</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="blog.html">
+                                                    <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="blog.html">Blog</a>
+                                                        <a class="menu-item" href="blog-detail.html">Blog Detail</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+    
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="offers.html">
+                                                    <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="contact.html">
+                                                    <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                                 <!-- /#main-nav -->
                             </div>
 
@@ -144,9 +176,10 @@
                                     </span>
                                     
                                 </div>
-                                <div class="mobile-button"><span></span></div>
-                                <!-- /.mobile-button -->
+                               
                             </div>
+                            <div class="mobile-button"><span></span></div>
+                            <!-- /.mobile-button -->
                         </div>
                     </div>
                 </div>
@@ -158,8 +191,8 @@
                 <div class="container w_1200 ">
                     <div class="col-md-12">
                         <div class="wrap-content">
-                            <div class="sub-heading">special offer</div>
-                            <h2 class="heading">Discover Great <br> Deals Every Day For<br> Customers</h2>
+                            <div class="sub-heading">BASILICO PIZZA STORY</div>
+                            <h2 class="heading">Learn About Our   <br> Formation And<br>  Development Process. </h2>
                         </div>
                     </div>
                 </div>
@@ -177,7 +210,7 @@
                             <div class="flat-accordion wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> 
                                 <div class="flat-toggle active">
                                     <div class="toggle-title active">
-                                     <h5 class="title">What is Contactless Delivery?</h5>
+                                     <h5 class="title">1968: The formation of a small pizza shop.</h5>
                                      <span class="icon">
                                         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.33464 11.25L11.0013 1.91667L19.668 11.25" stroke="#171717" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -185,17 +218,19 @@
                                      </span>
                                     </div>
                                     <div class="toggle-content" style="display: block;">
-                                        <div class="content">
-                                            <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
-                                            <p>Today, there are more than 16,000 independently owned and operated Basilico Pizza restaurants. Our 100+ franchise partners employ 350,000 team members in over 100 countries.</p>
+                                        <div class="wrap-content">
+                                            <div class="content">
+                                                <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
+                                                <p>Today, there are more than 16,000 independently owned and operated Basili-co Pizza restaurants. Our 100+ franchise partners employ 350,000 team mem-bers in over 100 countries.</p>
+                                            </div>
+                                             <img src="./assets/images/history/history-1.jpg" alt="image">
                                         </div>
-                                         <img src="./assets/images/history/history-1.jpg" alt="image">
                                     </div>
                                 </div> 
             
                                 <div class="flat-toggle">
                                     <div class="toggle-title">
-                                     <h5 class="title">How to do I avail contactless delivery?</h5>
+                                     <h5 class="title">1970 - 1975: Brand development and promotion stage. </h5>
                                      <span class="icon">
                                         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.33464 11.25L11.0013 1.91667L19.668 11.25" stroke="#171717" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -203,13 +238,19 @@
                                      </span>
                                     </div>
                                     <div class="toggle-content">
-                                         <p>Contactless Delivery means that there will be no direct contact between customer and delivery rider. Meal will be placed in a pre-agreed location and avoid touching or close face to face contact. Morbi aliquam mi sed aliquam inter-dum. Nam convallis nec odio vel faucibus.</p>
+                                        <div class="wrap-content">
+                                            <div class="content">
+                                                <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
+                                                <p>Today, there are more than 16,000 independently owned and operated Basili-co Pizza restaurants. Our 100+ franchise partners employ 350,000 team mem-bers in over 100 countries.</p>
+                                            </div>
+                                             <img src="./assets/images/history/history-1.jpg" alt="image">
+                                        </div>
                                     </div>
                                  </div> 
             
                                  <div class="flat-toggle">
                                     <div class="toggle-title">
-                                     <h5 class="title">Can I do Cash-on-delivery for contactless delivery?</h5>
+                                     <h5 class="title">1978 - 1983: Expanding 2 more facilities in new york.  </h5>
                                      <span class="icon">
                                         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.33464 11.25L11.0013 1.91667L19.668 11.25" stroke="#171717" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -217,13 +258,19 @@
                                      </span>
                                     </div>
                                     <div class="toggle-content">
-                                         <p>Contactless Delivery means that there will be no direct contact between customer and delivery rider. Meal will be placed in a pre-agreed location and avoid touching or close face to face contact. Morbi aliquam mi sed aliquam inter-dum. Nam convallis nec odio vel faucibus.</p>
+                                        <div class="wrap-content">
+                                            <div class="content">
+                                                <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
+                                                <p>Today, there are more than 16,000 independently owned and operated Basili-co Pizza restaurants. Our 100+ franchise partners employ 350,000 team mem-bers in over 100 countries.</p>
+                                            </div>
+                                             <img src="./assets/images/history/history-1.jpg" alt="image">
+                                        </div>
                                     </div>
                                  </div> 
             
                                  <div class="flat-toggle">
                                     <div class="toggle-title">
-                                     <h5 class="title">Do I have to pay extra to avail the contactless delivery service?</h5>
+                                     <h5 class="title">1996 - 2005: Franchise for 100 establishments.  </h5>
                                      <span class="icon">
                                         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.33464 11.25L11.0013 1.91667L19.668 11.25" stroke="#171717" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -231,7 +278,32 @@
                                      </span>
                                     </div>
                                     <div class="toggle-content">
-                                         <p>Contactless Delivery means that there will be no direct contact between customer and delivery rider. Meal will be placed in a pre-agreed location and avoid touching or close face to face contact. Morbi aliquam mi sed aliquam inter-dum. Nam convallis nec odio vel faucibus.</p>
+                                        <div class="wrap-content">
+                                            <div class="content">
+                                                <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
+                                                <p>Today, there are more than 16,000 independently owned and operated Basili-co Pizza restaurants. Our 100+ franchise partners employ 350,000 team mem-bers in over 100 countries.</p>
+                                            </div>
+                                             <img src="./assets/images/history/history-1.jpg" alt="image">
+                                        </div>
+                                    </div>
+                                 </div> 
+                                 <div class="flat-toggle">
+                                    <div class="toggle-title">
+                                     <h5 class="title">2006- To Present: America's leading pizza brand.   </h5>
+                                     <span class="icon">
+                                        <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.33464 11.25L11.0013 1.91667L19.668 11.25" stroke="#171717" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                                        </svg>
+                                     </span>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div class="wrap-content">
+                                            <div class="content">
+                                                <p>In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. They named it Basilico Pizza because their sign only had room for eight letters. The restaurant’s popularity grew quickly due to the delicious food and quality service.</p>
+                                                <p>Today, there are more than 16,000 independently owned and operated Basili-co Pizza restaurants. Our 100+ franchise partners employ 350,000 team mem-bers in over 100 countries.</p>
+                                            </div>
+                                             <img src="./assets/images/history/history-1.jpg" alt="image">
+                                        </div>
                                     </div>
                                  </div> 
                                  
@@ -240,6 +312,74 @@
                     </div>
                 </div>
                 
+            </section>
+
+            <section class="tf-galerry">
+                <div class="container w_1200">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tf-heading">
+                                <div class="sub-heading">discovery gallery</div>
+                                <h2 class="heading">Our Memorable Moment </h2>
+                                <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="wrap-gallery">
+                                <div class="box-gallery a">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-2.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Surprise - 1966 </div>
+                                </div>
+                                <div class="box-gallery a">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-3.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Happy venue - 1972 </div>
+                                </div>
+                                <div class="box-gallery b">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-4.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Juggle pizza - 1992 </div>
+                                </div>
+                                <div class="box-gallery c">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-5.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Inside the restaurant - 1983 </div>
+                                </div>
+                                <div class="box-gallery a">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-6.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Flavor processing - 1999  </div>
+                                </div>
+                                <div class="box-gallery a">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-7.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Small street corner - 2002</div>
+                                </div>
+                                <div class="box-gallery a">
+                                    <div class="image">
+                                        <img src="./assets/images/history/history-8.jpg" alt="image">
+                                        <div class="icon"><i class="fas fa-eye"></i></div>
+                                    </div>
+                                    <div class="title">Late night - 2011  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="tf-about-order">

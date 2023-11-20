@@ -21,8 +21,8 @@
 
   // Mobile Navigation
   var mobileNav = function () {
-    var mobile = window.matchMedia("(max-width: 991px)");
-    var wrapMenu = $("#site-header-inner");
+    var mobile = window.matchMedia("(max-width: 1200px)");
+    var wrapMenu = $(".menu-append");
     var navExtw = $(".nav-extend.active");
     var navExt = $(".nav-extend.active").children();
     var logo = $(".header__logo-mobile");
@@ -371,6 +371,8 @@
       }
     }); // accordion
   };
+
+
 
   // tabs
   var tabs = function () {

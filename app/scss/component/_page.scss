@@ -71,11 +71,79 @@
 }
 
 .history {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-5.jpg) center center no-repeat;
+    }
     .tf-accordion {
-        padding: 130px 0;
+        padding: 127px 0;
+        background: url(../../../assets/images/history/bg-hisstory.jpg) center center no-repeat;
+        background-size: cover;
         .flat-accordion {
-            padding: 120px 0;
+            padding: 49px 0 13px;
+            .flat-toggle {
+                .toggle-content {
+                    padding: 0;
+                   
+                }
+                &.active {
+                    .toggle-content {
+                       .wrap-content {
+                            display: flex ;
+                            flex-wrap: wrap;
+                            .content {
+                                width: 68.4%;
+                                padding: 43px 32px;
+                                padding-right: 100px;
+                                p:not(:last-child) {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                            img {
+                                width: 31.6%;
+                            }
+                       }
+                    }
+                }
+            }
+           
         }
     }
     
+}
+
+.book-a-table {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-2.jpg) center center no-repeat;
+    }
+}
+
+.menu-restaurant {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-6.jpg) center center no-repeat;
+    }
+    .tf-about-order .wrap-about-order .heading {
+        padding-right: 150px;
+    }
+}
+
+.carrer {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-4.jpg) center center no-repeat;
+    }
+}
+.blog {
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-7.jpg) center center no-repeat;
+    }
+    .tf-blog {
+        padding: 132px 0 76px;
+        .wrap-subcribe {
+            border: 1px solid $color-3;
+        }
+    }
+}
+.blog-single{
+    .tf-page-title {
+        background: url(../../../assets/images/backgroup/bg-page-title-7.jpg) center center no-repeat;
+    }
 }

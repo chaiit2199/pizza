@@ -50,10 +50,10 @@ var swiper = new Swiper(".tf-menu-slider", {
             slidesPerView: 1,
         },
         600: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         750: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         991: {
             slidesPerView: 2
@@ -191,3 +191,41 @@ var thumbs = new Swiper ('.testimonial-thumbs', {
 
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
+
+
+var swiper = new Swiper(".tf-job-slider", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".btn-nav.btn-next",
+        prevEl: ".btn-nav.btn-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        400: {
+            slidesPerView: 1,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        750: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 2
+        },
+        1280: {
+            slidesPerView: 3
+        },
+        1500: {
+            slidesPerView: 3
+        },
+    },
+});

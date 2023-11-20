@@ -11,22 +11,123 @@
     display: block;
 }
 
-@include res1760 {}
+@include res1760 {
+    .header {
+        .header-right {
+            .wrap-infor {
+                display: none;
+            }
+        }
+    } 
+}
 
-@include res1600 {}
+@include res1600 {
+    .tf-career .wrap-career .box-career {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
 
-@include res1440 {}
+@include res1440 {
+    .header {
+        .header-right {
+            .wrap-button {
+                display: none;
+            }
+        }
+    } 
+    .header.style-2 .btn-search {
+        display: none;
+    }
+    .wrap-topbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tf-slider .bg-slider {
+        padding: 100px 6%;
+    }
+    .tf-contact.style-2 .content-right,
+    .tf-contact.style-2 .content-center,
+    .tf-about.style-2 .content-right,
+    .tf-about.style-2 .content-left {
+        padding: 50px;
+    }
+}
 
-@include res1200 {}
+@include res1200 {
+    .header {
+        .header-right {
+            display: none;
+        }
+    } 
+    .header.style-2 .header-right .btn-cart {
+        display: none;
+    }
+    .mobile-button {
+        display: block;
+    }
+    .tf-about.style-2 .content-right,
+    .tf-about.style-2 .content-left ,
+    .tf-about.style-2 .content-center {
+        width: 100%;
+    }
+}
 
 @include res991 {
     .mobile-button {
         display: block;
     }
+    .icon-counter {
+        display: none;
+    }
+    .wrap-topbar .content-left .information {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tf-menu .wrap-menu .tf-menu-slider .box-menu {
+        padding: 33px 15px;
+        padding-bottom: 0;
+        .wrap-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 -15px;
+        }
+    }
 }
 
 @include res767 {}
 
-@include res600 {}
+@include res600 {
+    .header.style-2 .header-left .toogle-sidebar ,
+    .wrap-topbar .content-right {
+        display: none;
+    }
+    .tf-menu .btn-nav {
+        width: 40px;
+    }
+    .tf-menu .wrap-menu .tf-menu-slider {
+        width: calc(100% - 80px);
+    }
+    .tf-about.style-2 .content-right, .tf-about.style-2 .content-left {
+        padding: 50px 15px;
+    }
+    .tf-video .video .wrap-video a {
+        width: 50px;
+        height: 50px;
+    }
+}
 
-@include res500 {}
+@include res500 {
+    .tf-menu .wrap-menu .tf-menu-slider .box-menu .wrap-button {
+        flex-wrap: wrap;
+        .btn-menu {
+            width: 100%;
+        }
+    }
+}

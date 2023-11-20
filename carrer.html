@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png" />
     </head>
 
-    <body class="body header-fixed main inner-page inner-page-themes is_light ">
+    <body class="body header-fixed main inner-page inner-page-themes carrer ">
         <!-- preloade -->
         <!-- <div class="preload preload-container">
       <p class="heading-preload" data-text="loading">loading</p>
@@ -38,7 +38,13 @@
                                     <ul class="menu-topbar">
                                         <li><a href="#"><i class="fas fa-pizza-slice"></i>career</a></li>
                                         <li><a href="#"><i class="far fa-credit-card"></i>LOYALTY CARD</a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i>English</a></li>
+                                        <li><a href="#" class="english">
+                                            <i class="fas fa-globe"></i>
+                                            <select>
+                                                <option value="English">English</option>
+                                                <option value="Vietnamese">Vietnamese</option>
+                                            </select>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -73,7 +79,10 @@
                                 
                                 
                                 <div class="tf-button-order">
-                                    <a href="#" class="button-order">Your Order Address  <i class="fas fa-chevron-down"></i></a>
+                                    <select>
+                                        <option value="1">Your Order Address</option>
+                                        <option value="2">Your Order Address 2</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="header-center">
@@ -85,51 +94,74 @@
                                 <div class="header__logo-mobile">
                                     <a href="index.html"><img src="assets/images/logo/logo2.png" alt="" /></a>
                                 </div>
-                                <nav id="main-nav" class="main-nav">
-                                    <ul id="menu-primary-menu" class="menu">
-                                        <li class="menu-item menu-item-has-children current-menu-item">
-                                            <a href="Home-Corperate.html">
-                                                <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="About-01.html">
-                                                <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Service-01.html">
-                                                <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a class="menu-item" href="Service-01.html">Service 01</a>
-                                                    <a class="menu-item" href="Service-02.html">Service 02</a>
-                                                    <a class="menu-item" href="Service-Details.html">Service Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Project-List.html">
-                                                <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
-                                            </a>
-                                            
-                                        </li>
-
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Blog.html">
-                                                <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Contact.html">
-                                                <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <div class="menu-append">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="index.html">
+                                                    <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="index.html">Home 01</a>
+                                                        <a class="menu-item" href="home-02.html">Home 02</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children current-menu-item relative">
+                                                <a href="#">
+                                                    <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="about-us.html">About us</a>
+                                                        <a class="menu-item current-menu-item" href="carrer.html">Career</a>
+                                                        <a class="menu-item" href="faqs.html">Faqs</a>
+                                                        <a class="menu-item" href="history.html">History</a>
+                                                        <a class="menu-item" href="location.html">Location</a>
+                                                        <a class="menu-item" href="porfolio.html">Porfolio</a>
+                                                        <a class="menu-item" href="team.html">Team</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="menu-restaurant.html">
+                                                    <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="menu-restaurant.html">Menu Restaurant</a>
+                                                        <a class="menu-item" href="book-a-table.html">Book a table</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="blog.html">
+                                                    <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="blog.html">Blog</a>
+                                                        <a class="menu-item" href="blog-detail.html">Blog Detail</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+    
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="offers.html">
+                                                    <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="contact.html">
+                                                    <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                                 <!-- /#main-nav -->
                             </div>
 
@@ -144,377 +176,241 @@
                                     </span>
                                     
                                 </div>
-                                <div class="mobile-button"><span></span></div>
-                                <!-- /.mobile-button -->
+                               
                             </div>
+                            <div class="mobile-button"><span></span></div>
+                            <!-- /.mobile-button -->
                         </div>
                     </div>
                 </div>
             </header>
             <!-- end Header -->
 
-            <section class="tf-slider">
-                <div class="tf-container">
-                    <div class="tf-col-50 bg-slider">
+            <section class="tf-page-title tf-section">
+                <div class="overlay"></div>
+                <div class="container w_1200 ">
+                    <div class="col-md-12">
                         <div class="wrap-content">
-                            <h1 class="heading color-1">True Italian Taste.</h1>
-                            <h1 class="heading color-2">Delivered at the</h1>
-                            <h1 class="heading color-3">Speed of Flash!</h1>
-                            <div class="sub-heading">Keep reading through the pizza quotes to learn some interesting facts about this delicious slice of Americana.</div>
-                            <div class="wrap-button">
-                                <a href="#" class="tf-button ">
-                                    <span class="btn-main">view all menu</span>
-                                    <span class="btn-absolute"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tf-col-50">
-                        <div class="wrap-image">
-                            <img src="./assets/images/slider/slider-1.jpg" alt="slider">
+                            <div class="sub-heading">career for you </div>
+                            <h2 class="heading">You Need A Job?<br> Become Part Of<br>Our Family! </h2>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="topbar style-2">
-                <div class="container w_1920 pd0">
-                    <div class="ticker-title">
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            Welcome to Basilico Pizza. We ship on weekdays. Free shipping over €25 within a radius of 5km
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            From January 15 to January 20, 20% off all products
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            Welcome to Basilico Pizza. We ship on weekdays. Free shipping over €25 within a radius of 5km
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            Welcome to Basilico Pizza. We ship on weekdays. Free shipping over €25 within a radius of 5km
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            From January 15 to January 20, 20% off all products
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                        <p class="flex items-center fz-13 fw-500 uppercase white">
-                            <img class="mr-4" src="./assets/images/common/pizza_1.png" alt="" />
-                            Welcome to Basilico Pizza. We ship on weekdays. Free shipping over €25 within a radius of 5km
-                            <img class="ml-4" src="./assets/images/common/pizza_1.png" alt="" />
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <section class="tf-banner">
-                <div class="container w_1770">
+            <section class="tf-about-order find-job">
+                <div class="container w_1210">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="wrap-banner-3">
-                                <div class="box-banner">
-                                    <img src="./assets/images/banner/banner-1.jpg" alt="image">
-                                </div>
-                                <div class="box-banner">
-                                    <img src="./assets/images/banner/banner-2.jpg" alt="image">
-                                </div>
-                                <div class="box-banner">
-                                    <img src="./assets/images/banner/banner-3.jpg" alt="image">
-                                </div>
-                            </div>
-                            <div class="wrap-banner-2">
-                                <div class="box-banner">
-                                    <img src="./assets/images/banner/banner-4.jpg" alt="image">
-                                </div>
-                                <div class="box-banner">
-                                    <img src="./assets/images/banner/banner-5.jpg" alt="image">
-                                </div>
-                            </div>
+                           <div class="wrap-find-job">
+                                <h3 class="heading">Find A Job Near You.</h3>
+                                <form action="search">
+                                    <select name="name" >
+                                        <option value="1">Name Job </option>
+                                        <option value="2">Name Job 2</option>
+                                        <option value="3">Name Job 3</option>
+                                    </select>
+                                    <select name="location" >
+                                        <option value="1">Shop Location </option>
+                                        <option value="2">Shop Location 2</option>
+                                        <option value="3">Shop Location 3</option>
+                                    </select>
+                                    <select name="time" >
+                                        <option value="1">Working Time </option>
+                                        <option value="2">Working Time 2</option>
+                                        <option value="3">Working Time 3</option>
+                                    </select>
+                                    <button><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                                </form>
+                           </div>
                         </div>
                     </div>
                 </div>
-                
+                <div class="image"><img src="./assets/images/order/pizza.png" alt="image"></div>
             </section>
 
-            <section class="tf-menu tf-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="tf-heading">
-                                <div class="sub-heading">CHOOSE YOUR FLAVOR</div>
-                                <h2 class="heading">The Best Pizza Menu <img src="./assets/images/backgroup/heading-icon.png" alt="image"></h2>
-                                <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- <div class="col-md-12"> -->
-                            <div class="wrap-menu">
-                                <div class="btn-nav btn-prev"><div class="text">Previous</div></div>
-                                <div class="swiper-container tf-menu-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="box-menu active">
-                                                <div class="image"><img src="./assets/images/product/product-1.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">Peach Seafood</h4>
-                                                <div class="price">$25.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="label">HOT!!</div>
-                                                <div class="image"><img src="./assets/images/product/product-2.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">Shrimp Cocktail</h4>
-                                                <div class="price">$35.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="label">SALE!!</div>
-                                                <div class="image"><img src="./assets/images/product/product-3.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">New Ocean</h4>
-                                                <div class="price">$28.00 - $15.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="image"><img src="./assets/images/product/product-4.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">Peperoni</h4>
-                                                <div class="price">$38.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="label">HOT!!</div>
-                                                <div class="image"><img src="./assets/images/product/product-2.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">Shrimp Cocktail</h4>
-                                                <div class="price">$35.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="label">SALE!!</div>
-                                                <div class="image"><img src="./assets/images/product/product-3.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">New Ocean</h4>
-                                                <div class="price">$28.00 - $15.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-menu">
-                                                <div class="image"><img src="./assets/images/product/product-4.png" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
-                                                <h4 class="heading">Peperoni</h4>
-                                                <div class="price">$38.00</div>
-                                                <div class="wrap-button">
-                                                    <a href="#" class="btn-menu detail">view detail</a>
-                                                    <a href="#" class="btn-menu">order now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <!-- <div class="wrap-menu-content">
-                                    
-                                    
-                                    
-                                    
-                                </div> -->
-                                <div class="btn-nav btn-next"><div class="text">Next</div></div>
-                            </div>
-                        <!-- </div> -->
-                        <div class="col-md-12">
-                            <div class="btn-view-all">
-                                <a href="#" class="tf-button style1">
-                                    <span class="btn-main">view all menu</span>
-                                    <span class="btn-absolute"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tf-about style-2">
+            <section class="tf-information">
                 <div class="content-left">
-                    <h2 class="heading cl1 ">Yo.Welcome!! </h2>
-                    <h2 class="heading ">We Bring Delicious Pizza To Everyone.</h2>
-                    <h2 class="heading cl2"> Hot Pizza, Pronto</h2>
+                    <img src="./assets/images/about/about-8.jpg" alt="image">
+                </div>
+                <div class="content-right">
+                    <p class="des">
+                        We take great pride in cultivating a supportive and fun culture that encourages growth through on-the-job training, a commitment to promote from within whenever possible, and doing everything we can to help our employees excel in their careers. Working at Mary’s is more than just a job – it’s a decision to jump-start your career and join our family.
+                    </p>
+                    <div class="wrap-button">
+                        <a href="#" class="tf-button style1">
+                            <span class="btn-main">join us now</span>
+                            <span class="btn-absolute"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-about style-2 custom">
+                <div class="content-left">
+                    <h2 class="heading cl1 ">We Nourish Our Community.</h2>
+                    <h2 class="heading "> We Create Exceptional Experiences Every Day.</h2>
+                    <h2 class="heading cl2">We Are Next Level. </h2>
                     <img src="./assets/images/about/icon-about.png" alt="image" class="icon-about"></img>
                 </div>
                 <div class="content-center">
-                    <img src="./assets/images/about/about-2.jpg" alt="image">
+                    <img src="./assets/images/about/about-9.jpg" alt="image">
                 </div>
                 <div class="content-right">
-                    <p class="des">Basilico Pizza was born out of three friends’ shared passion for simple, quality pizza.</p>
-                    <p class="des">We’ve been awarded Best Value Eats in the Observer Food Monthly awards in 2022, after winning their Best Cheap Eats award in 2017, have been voted London’s favourite pizza in Time Out’s inaugural Clash of the Slices </p>
                     <ul class="list-about">
-                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Quality cake ingredients</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>100% food safe</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Super fast & free delivery 4km</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We treat everyone with warmth, kindness & hospitality.  </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We create positive energy and have fun.</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We work as a team.    </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg> We are open-minded.</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We communicate with transparency & respect.    </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg> We are inclusive & equitable. We honor each individual.  </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We practice balance in work and life.   </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We are fiscally responsible.    </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#c8dda9"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>We hold ourselves & each other accountable    for our action</li>
                     </ul>
-                    <div class="wrap-button">
-                        <a href="#" class="tf-button style1">
-                            <span class="btn-main">read more</span>
-                            <span class="btn-absolute"></span>
-                        </a>
-                    </div>
                 </div>
 
             </section>
 
-            <section class="tf-video"> 
-                <div class="container w_1895">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="video">
-                                <img class="img_video" src="./assets/images/backgroup/bg-video.jpg" alt="image">
-                                <div class="wrap-video">
-                                    <a href="https://www.youtube.com/watch?v=Celf7jSGtNc" class="popup-youtube pulse_three">
-                                        <img src="./assets/images/icon/video.svg" alt="">
-                                    </a>
+            <section class="tf-benefit"> 
+                <div class="container w_1200 ">
+                    <div class="col-md-12">
+                        <div class="tf-heading">                    
+                            <div class="sub-heading">WHY CHOOSE BASILICO PIZZA</div>
+                            <h2 class="heading">Benefits You Won’t Find  Elsewhere</h2>
+                            <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="wrap-benefit">
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-1.png" alt="image"></div>
+                                <h5 class="title">Fair Pay With Tip</h5>
+                                <p class="des">We treat F&M as they should be
+                                    competitive pay with tips. Aliquam erat volutpat. Aliquam erat volutpat.</p>
+                            </div>
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-2.png" alt="image"></div>
+                                <h5 class="title">Healthcare Benefits </h5>
+                                <p class="des">To support you and your familyAliquam erat volutpat. Morbi aliquam mi sed aliquam. Nam convallis nec.</p>
+                            </div>
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-3.png" alt="image"></div>
+                                <h5 class="title">401K</h5>
+                                <p class="des">Enroll in our 401k program and start saving. Aliquam erat volutpat. Aliquam erat volutpat.Morbi maximus orci.</p>
+                            </div>
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-4.png" alt="image"></div>
+                                <h5 class="title">Paid Time Off</h5>
+                                <p class="des">For Personal Use and Activism. Aliquam erat volutpat. Aliquam erat volutpat. Morbi maximus orci ante.</p>
+                            </div>
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-5.png" alt="image"></div>
+                                <h5 class="title">Culture Of Togetherness</h5>
+                                <p class="des">Without burying the individual Aliquam erat volutpat. Aliquam erat volutpat.Morbi maximus orci erat.</p>
+                            </div>
+                            <div class="box-benefit">
+                                <div class="icon"><img src="./assets/images/benefit/benefit-6.png" alt="image"></div>
+                                <h5 class="title">Instant Pay</h5>
+                                <p class="des">Get paid before pay day via. Aliquam erat volutpat. Aliquam erat volutpat.Morbi maximus orci erat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-job">
+                <div class="wrap-heading">
+                    <div class="tf-heading">                    
+                        <div class="sub-heading">The right job for you </div>
+                        <h2 class="heading">Features Jobs</h2>
+                        <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
+                        </p>
+                    </div>
+                </div>               
+                <div class="wrap-job">
+                    <div class="btn-nav btn-prev"><div class="text">Previous</div></div>
+                    <div class="swiper-container tf-job-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box-job active">
+                                    <div class="image"><img src="./assets/images/job/job-1.jpg" alt="Image"></div>
+                                    <div class="content">
+                                        <h4 class="heading">Back of House </h4>
+                                        <div class="category">Line Cooks - Pizza Makers - Salad Makers</div>
+                                    </div>
+                                    <div class="content-absosute">
+                                        <h4 class="heading">Back of House </h4>
+                                        <div class="category">Line Cooks - Pizza Makers - Salad Makers</div>
+                                        <img src="./assets/images/job/job-1.png" alt="image">
+                                        <p class="des">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,  omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                        <div class="wrap-button">
+                                            <a href="#" class="tf-button style1">
+                                                <span class="btn-main">read more</span>
+                                                <span class="btn-absolute"></span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="box-job">
+                                    <div class="image"><img src="./assets/images/job/job-2.jpg" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
+                                    <div class="content">
+                                        <h4 class="heading">Shift Management </h4>
+                                        <div class="category">management of revenue and human resources</div>
+                                    </div>
+                                    <div class="content-absosute">
+                                        <h4 class="heading">Shift Management </h4>
+                                        <div class="category">management of revenue and human resources</div>
+                                        <img src="./assets/images/job/job-1.png" alt="image">
+                                        <p class="des">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,  omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                        <div class="wrap-button">
+                                            <a href="#" class="tf-button style1">
+                                                <span class="btn-main">read more</span>
+                                                <span class="btn-absolute"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-job">
+                                    <div class="image"><img src="./assets/images/job/job-2.jpg" alt="Image"><img class="icon" src="./assets/images/backgroup/menu-icon.png" alt="icon"></div>
+                                    <div class="content">
+                                        <h4 class="heading">Pizza Delivery  </h4>
+                                        <div class="category">food delivery part time or full time</div>
+                                    </div>
+                                    <div class="content-absosute">
+                                        <h4 class="heading">Pizza Delivery </h4>
+                                        <div class="category">food delivery part time or full time</div>
+                                        <img src="./assets/images/job/job-1.png" alt="image">
+                                        <p class="des">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,  omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                        <div class="wrap-button">
+                                            <a href="#" class="tf-button style1">
+                                                <span class="btn-main">read more</span>
+                                                <span class="btn-absolute"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </div>
-                    </div>
-                    
-                </div> 
+                    </div> 
+                    <!-- <div class="wrap-menu-content">
+                        
+                        
+                        
+                        
+                    </div> -->
+                    <div class="btn-nav btn-next"><div class="text">Next</div></div>
+                </div>
             </section>
-
-            <section class="tf-contact style-2">
-                <div class="content-left">
-                    <img src="./assets/images/contact/contact2.jpg" alt="image">
-                </div>
-                <div class="content-center">
-                    <h2>The perfect place for events or dining with your friends and loved ones.</h2>
-                    <img class="icon" src="./assets/images/contact/icon-arow.png" alt="image">
-                </div>
-                <div class="content-right">
-                    <p>Please reserve a table before 10am and 5pm.Thank you!!</p>
-                    <form action="#" class="form-contact" id="contactform" novalidate="novalidate">
-                        <fieldset>
-                            <input type="text" name="name" id="name" placeholder="Your Name" required="">
-                        </fieldset>
-                        <fieldset>
-                            <input type="email" name="mail" id="mail" placeholder="Your Mail" required="">
-                        </fieldset> 
-                        <fieldset class="mb-52">
-                            <textarea placeholder="Messenger" rows="1" tabindex="5" name="message" class="message" id="message" required=""></textarea>
-                        </fieldset>
-                        <button class="tf-button style1" type="submit">
-                            <span class="btn-main">book a table</span>
-                            <span class="btn-absolute"></span></button>
-                    </form>
-                </div>
-            </section>
-
-            <div class="tf-team tf-section">
-                <div class="tf-heading">                    
-                    <div class="sub-heading">our teams</div>
-                    <h2 class="heading">Basilico Pizza's Team</h2>
-                    <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
-                    </p>
-                </div>
-                <div class="wrap-team">
-                    <div class="box-team">
-                        <div class="image">
-                            <img src="./assets/images/team/team-1.jpg" alt="image">
-                            <div class="social">
-                                <a href="#">Fb.</a>
-                                <a href="#">Tw.</a>
-                                <a href="#">Sky.</a>
-                                <a href="#">In.</a>
-                            </div>
-                        </div>
-                        <h5 class="name">Julia Alice</h5>
-                        <p class="position">Store Owner</p>
-                    </div>
-                    <div class="box-team active">
-                        <div class="image">
-                            <img src="./assets/images/team/team-2.jpg" alt="image">
-                            <div class="social">
-                                <a href="#">Fb.</a>
-                                <a href="#">Tw.</a>
-                                <a href="#">Sky.</a>
-                                <a href="#">In.</a>
-                            </div>
-                        </div>
-                        <h5 class="name">Alastair Floyd </h5>
-                        <p class="position">Pizza Baker</p>
-                    </div>
-                    <div class="box-team">
-                        <div class="image">
-                            <img src="./assets/images/team/team-3.jpg" alt="image">
-                            <div class="social">
-                                <a href="#">Fb.</a>
-                                <a href="#">Tw.</a>
-                                <a href="#">Sky.</a>
-                                <a href="#">In.</a>
-                            </div>
-                        </div>
-                        <h5 class="name">Estelle Terrell </h5>
-                        <p class="position">deliver</p>
-                    </div>
-                    <div class="box-team">
-                        <div class="image">
-                            <img src="./assets/images/team/team-4.jpg" alt="image">
-                            <div class="social">
-                                <a href="#">Fb.</a>
-                                <a href="#">Tw.</a>
-                                <a href="#">Sky.</a>
-                                <a href="#">In.</a>
-                            </div>
-                        </div>
-                        <h5 class="name">Laurence Shannon</h5>
-                        <p class="position">Pizza Baker</p>
-                    </div>
-                </div>
-            </div>
 
             <section class="tf-testimonial style-2 tf-section">
-                <div class="wrap-heading">
-                    <img class="icon-1" src="./assets/images/testimonial/testimonial-icon-9.png" alt="Image">
-                    <div class="content">
-                        <h2 class="heading">We Are Recruiting!</h2>
-                        <h2 class="heading color-1"> Join To Be A Part Of Us. </h2>
-                    </div>
-                    <div class="wwrap-button">
-                        <a href="#" class="tf-button ">
-                            <span class="btn-main">join us now </span>
-                            <span class="btn-absolute"></span>
-                        </a>
-                    </div>
-                </div>
-       
-                
+               
                 <div class="container-fluid">
                     <div class="row">
                         <!-- <div class="col-md-12"> -->
@@ -594,246 +490,6 @@
                         <!-- </div> -->
                     </div>
                 </div>
-            </section>
-
-            <section class="tf-partner">
-                <div class="swiper-container tf-partner-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-1.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-2.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-3.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-4.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-5.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-6.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-1.png" alt="Image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-partner">
-                                <img src="./assets/images/brand/brand-2.png" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tf-blog tf-section">
-                <div class="container w_1530">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="tf-heading">                    
-                                <div class="sub-heading">Read the latest new</div>
-                                <h2 class="heading">What's New At Blog  </h2>
-                                <p class="text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="wrap-blog">
-                                <div class="btn-blog btn-prev"><div class="text"><i class="fas fa-chevron-left"></i></div></div>
-                                <div class="swiper-container tf-blog-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="box-blog">
-                                                <div class="inner">
-                                                    <div class="image">
-                                                        <img src="./assets/images/post/post-1.jpg" alt="Image">
-                                                        <div class="meta">
-                                                            <span class="time">
-                                                                <i class="fas fa-calendar-minus"></i>
-                                                                13 Jan 2023
-                                                            </span>
-                                                            <span class="category">
-                                                                <i class="fas fa-tag"></i>
-                                                                Food, Pizza, Sauce
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <h5 class="heading"><a href="#">3 Traits Your Pizza Dough Supplier Must Have</a> </h5>
-                                                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada...</p>
-                                                </div>
-                                                <a href="#" class="btn-readmore">
-                                                    read more<i class="fas fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-blog">
-                                                <div class="inner">
-                                                    <div class="image">
-                                                        <img src="./assets/images/post/post-2.jpg" alt="Image">
-                                                        <div class="meta">
-                                                            <span class="time">
-                                                                <i class="fas fa-calendar-minus"></i>
-                                                                13 Jan 2023
-                                                            </span>
-                                                            <span class="category">
-                                                                <i class="fas fa-tag"></i>
-                                                                Food, Pizza, Sauce
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <h5 class="heading"><a href="#"> Pizza Crust Types: Self-Rising and Par-Baked</a></h5>
-                                                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada...</p>
-                                                </div>
-                                                <a href="#" class="btn-readmore">
-                                                    read more<i class="fas fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-blog">
-                                                <div class="inner">
-                                                    <div class="image">
-                                                        <img src="./assets/images/post/post-3.jpg" alt="Image">
-                                                        <div class="meta">
-                                                            <span class="time">
-                                                                <i class="fas fa-calendar-minus"></i>
-                                                                13 Jan 2023
-                                                            </span>
-                                                            <span class="category">
-                                                                <i class="fas fa-tag"></i>
-                                                                Food, Pizza, Sauce
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <h5 class="heading"><a href="#"> Premium vs. Commodity: How Ingredients Define Your Pizza</a></h5>
-                                                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada...</p>
-                                                </div>
-                                                <a href="#" class="btn-readmore">
-                                                    read more<i class="fas fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="box-blog">
-                                                <div class="inner">
-                                                    <div class="image">
-                                                        <img src="./assets/images/post/post-1.jpg" alt="Image">
-                                                        <div class="meta">
-                                                            <span class="time">
-                                                                <i class="fas fa-calendar-minus"></i>
-                                                                13 Jan 2023
-                                                            </span>
-                                                            <span class="category">
-                                                                <i class="fas fa-tag"></i>
-                                                                Food, Pizza, Sauce
-                                                            </span>
-                                                        </div>                                                    
-                                                    </div>
-                                                    
-                                                    <h5 class="heading"><a href="#"> 3 Traits Your Pizza Dough Supplier Must Have</a></h5>
-                                                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada...</p>
-                                                </div>
-                                                <a href="#" class="btn-readmore">
-                                                    read more<i class="fas fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="btn-blog btn-next"><div class="text"><i class="fas fa-chevron-right"></i></div></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="wrap-subcribe">
-                                <div class="tf-heading">                    
-                                    <h2 class="heading">Subscribe To Follow The Latest News From Us! </h2>
-                                    <p class="text-heading">We promise not to spam your inbox, that's what we guarantee.</p>
-                                </div>
-                                <div class="form-subcribe">
-                                    <input type="text" placeholder="Email address* ">
-                                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                                </div>
-                                <img class="icon1" src="assets/images/post/vecto1.png" alt="icon">
-                                <img  class="icon2" src="assets/images/post/vecto2.png" alt="icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tf-instagram">
-                <div class="container w_1530">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="wrap-instagram">
-                                <div class="box-instagram active">
-                                    <div class="icon"><img src="./assets/images/backgroup/icon-instagram.png" alt="image"></div>
-                                    <img src="./assets/images/instagram/instagram-1.jpg" alt="">
-                                </div>
-                                <div class="box-instagram">
-                                    <div class="icon"><img src="./assets/images/backgroup/icon-instagram.png" alt="image"></div>
-                                    <img src="./assets/images/instagram/instagram-1.jpg" alt="">
-                                </div>
-                                <div class="box-instagram">
-                                    <div class="icon"><img src="./assets/images/backgroup/icon-instagram.png" alt="image"></div>
-                                    <img src="./assets/images/instagram/instagram-2.jpg" alt="">
-                                </div>
-                                <div class="box-instagram">
-                                    <div class="icon"><img src="./assets/images/backgroup/icon-instagram.png" alt="image"></div>
-                                    <img src="./assets/images/instagram/instagram-3.jpg" alt="">
-                                </div>
-                                <div class="box-instagram">
-                                    <div class="icon"><img src="./assets/images/backgroup/icon-instagram.png" alt="image"></div>
-                                    <img src="./assets/images/instagram/instagram-4.jpg" alt="">
-                                </div>
-                               
-                            </div>
-                            <div class="btn-follow">
-                                <a href="#">follow instagram to see more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="tf-about-order">
-                <div class="container w_1210">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="wrap-about-order">
-                                <h2 class="heading">Are you looking for a pizza shop? <span class="cl1">#1</span> pizza in town!! <span class="cl2">Yum Yum.</span> </h2>
-                                <a href="#" class="tf-button ">
-                                    <span class="btn-main">order now today</span>
-                                    <span class="btn-absolute"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image"><img src="./assets/images/order/pizza.png" alt="image"></div>
             </section>
 
            

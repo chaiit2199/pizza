@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png" />
     </head>
 
-    <body class="body header-fixed main inner-page inner-page-themes is_light ">
+    <body class="body header-fixed main inner-page inner-page-themes menu-restaurant ">
         <!-- preloade -->
         <!-- <div class="preload preload-container">
       <p class="heading-preload" data-text="loading">loading</p>
@@ -38,7 +38,13 @@
                                     <ul class="menu-topbar">
                                         <li><a href="#"><i class="fas fa-pizza-slice"></i>career</a></li>
                                         <li><a href="#"><i class="far fa-credit-card"></i>LOYALTY CARD</a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i>English</a></li>
+                                        <li><a href="#" class="english">
+                                            <i class="fas fa-globe"></i>
+                                            <select>
+                                                <option value="English">English</option>
+                                                <option value="Vietnamese">Vietnamese</option>
+                                            </select>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -73,7 +79,10 @@
                                 
                                 
                                 <div class="tf-button-order">
-                                    <a href="#" class="button-order">Your Order Address  <i class="fas fa-chevron-down"></i></a>
+                                    <select>
+                                        <option value="1">Your Order Address</option>
+                                        <option value="2">Your Order Address 2</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="header-center">
@@ -85,51 +94,74 @@
                                 <div class="header__logo-mobile">
                                     <a href="index.html"><img src="assets/images/logo/logo2.png" alt="" /></a>
                                 </div>
-                                <nav id="main-nav" class="main-nav">
-                                    <ul id="menu-primary-menu" class="menu">
-                                        <li class="menu-item menu-item-has-children current-menu-item">
-                                            <a href="Home-Corperate.html">
-                                                <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="About-01.html">
-                                                <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Service-01.html">
-                                                <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a class="menu-item" href="Service-01.html">Service 01</a>
-                                                    <a class="menu-item" href="Service-02.html">Service 02</a>
-                                                    <a class="menu-item" href="Service-Details.html">Service Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Project-List.html">
-                                                <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
-                                            </a>
-                                            
-                                        </li>
-
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Blog.html">
-                                                <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                        <li class="menu-item menu-item-has-children relative">
-                                            <a href="Contact.html">
-                                                <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
-                                            </a>
-                                            
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <div class="menu-append">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="index.html">
+                                                    <div class="menu-text"><span>H</span><span>o</span><span>m</span><span>e</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="index.html">Home 01</a>
+                                                        <a class="menu-item" href="home-02.html">Home 02</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="#">
+                                                    <div class="menu-text"><span>P</span><span>a</span><span>g</span><span>e</span><span>s</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="about-us.html">About us</a>
+                                                        <a class="menu-item" href="carrer.html">Career</a>
+                                                        <a class="menu-item" href="faqs.html">Faqs</a>
+                                                        <a class="menu-item" href="history.html">History</a>
+                                                        <a class="menu-item" href="location.html">Location</a>
+                                                        <a class="menu-item" href="porfolio.html">Porfolio</a>
+                                                        <a class="menu-item" href="team.html">Team</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children current-menu-item relative">
+                                                <a href="menu-restaurant.html">
+                                                    <div class="menu-text"><span>M</span><span>e</span><span>n</span><span>u</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item current-menu-item" href="menu-restaurant.html">Menu Restaurant</a>
+                                                        <a class="menu-item" href="book-a-table.html">Book a table</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="blog.html">
+                                                    <div class="menu-text"><span>B</span><span>l</span><span>o</span><span>g</span></div>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a class="menu-item" href="blog.html">Blog</a>
+                                                        <a class="menu-item" href="blog-detail.html">Blog Detail</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+    
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="offers.html">
+                                                    <div class="menu-text"><span>O</span><span>f</span><span>f</span><span>e</span><span>r</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-has-children relative">
+                                                <a href="contact.html">
+                                                    <div class="menu-text"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></div>
+                                                </a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                                 <!-- /#main-nav -->
                             </div>
 
@@ -144,9 +176,10 @@
                                     </span>
                                     
                                 </div>
-                                <div class="mobile-button"><span></span></div>
-                                <!-- /.mobile-button -->
+                               
                             </div>
+                            <div class="mobile-button"><span></span></div>
+                            <!-- /.mobile-button -->
                         </div>
                     </div>
                 </div>
@@ -158,20 +191,248 @@
                 <div class="container w_1200 ">
                     <div class="col-md-12">
                         <div class="wrap-content">
-                            <div class="sub-heading">Frequently asked questions </div>
-                            <h2 class="heading">If You Have A<br> Question That Needs <br>To Be Answered, Consult It Now!</h2>
+                            <div class="sub-heading">menu pizza restaurant</div>
+                            <h2 class="heading">Check Out The <br> Menu Of Delicious <br> Dishes At Our Pizza Shop   </h2>
                         </div>
                     </div>
                 </div>
             </section>
-            
 
-            <section class="tf-about-order">
+
+            <section class="tf-menu-restaurant">
+                <img src="./assets/images/backgroup/icon-restaurant-1.png" alt="image" class="icon-1">
+                <img src="./assets/images/backgroup/icon-restaurant-2.png" alt="image" class="icon-2">
+                <div class="container w_1200">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flat-tabs">
+                                <ul class="menu-tab">
+                                    <li class="active">Speial pizza</li>
+                                    <li class="">pizza</li> 
+                                    <li class="">Appetizer</li> 
+                                    <li class="">drinks</li> 
+                                    <li class="">dessert</li>
+                                </ul>
+                                <div class="content-tab" >
+                                    <div class="content-inner active" > 
+                                        <div class="wrap-content wrap-menu-restaurant">
+                                            <div class="box-table-menu">
+                                                <h3 class="heading">Special Pizza </h3>
+                                                <div class="content">
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Pizza - Mixed Ham </span><span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mexican chicken, BBQ sauce, green peppers, mushrooms, ham, bacon and cheese.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$12</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$15</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$20</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Tom Yum Seafood Pizza </span> <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Special teriyaki sauce, mozzarella cheese, garlic butter chicken, seaweed.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$22</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$25</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$30</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Half & Half Pizza </span>  <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mix cheese, duck, tangerine, passion fruit sauce, mozzarella, cheese sauce.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$33</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$36</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$42</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Pizza With Passion Fruit Sauce</span>  <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Special teriyaki sauce, mozzarella cheese, garlic butter chicken, seaweed.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$22</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$25</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$30</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Teriyaki Chicken Pizza </span> <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mix cheese, duck, tangerine, passion fruit sauce, mozzarella, cheese sauce.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$13</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$20</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$26</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./assets/images/restaurant/restaurent-1.jpg" alt="image">
+                                            </div>
+                                            <div class="box-table-menu">
+                                                <h3 class="heading">Appetizer Menu  </h3>
+                                                <div class="content">
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Pizza - Mixed Ham </span><span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mexican chicken, BBQ sauce, green peppers, mushrooms, ham, bacon and cheese.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$12</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$15</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$20</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Tom Yum Seafood Pizza</span>  <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Special teriyaki sauce, mozzarella cheese, garlic butter chicken, seaweed.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$22</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$25</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$30</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Half & Half Pizza</span>   <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mix cheese, duck, tangerine, passion fruit sauce, mozzarella, cheese sauce.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$33</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$36</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$42</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Pizza With Passion Fruit Sauce</span>  <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Special teriyaki sauce, mozzarella cheese, garlic butter chicken, seaweed.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$22</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$25</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$30</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-menu">
+                                                        <div class="col-title">
+                                                            <h6 class="name"><span class="text">Teriyaki Chicken Pizza </span> <span class="esc">.........................................................................................................</span></h6>
+                                                            <p class="des">Mix cheese, duck, tangerine, passion fruit sauce, mozzarella, cheese sauce.</p>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$13</p>
+                                                            <div class="size">S</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$20</p>
+                                                            <div class="size">M</div>
+                                                        </div>
+                                                        <div class="col-price">
+                                                            <p class="price">$26</p>
+                                                            <div class="size">L</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./assets/images/restaurant/restaurent-2.jpg" alt="image">
+                                            </div>
+                                            
+                                        </div>        
+                                    </div>
+                                    <div class="content-inner" > 
+     
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="tf-about-order">   
                 <div class="container w_1210">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="wrap-about-order">
-                                <h2 class="heading">Are you looking for a pizza shop? <span class="cl1">#1</span> pizza in town!! <span class="cl2">Yum Yum.</span> </h2>
+                                <h2 class="heading">Are you craving for pizza? <span class="cl1">Book a table now</span> <span class="cl2">!! Yum Yum.</span> </h2>
                                 <a href="#" class="tf-button ">
                                     <span class="btn-main">order now today</span>
                                     <span class="btn-absolute"></span>
